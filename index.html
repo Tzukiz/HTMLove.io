@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLove | Servis Coding Hadiah Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .font-code { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Glass Effect Premium */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #f472b6 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hover-card:hover {
+            transform: translateY(-5px);
+            border-color: #f472b6;
+            transition: all 0.3s ease;
+        }
+
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-tr from-pink-500 to-purple-600 p-2 rounded-lg">
+                    <i data-lucide="code-2" class="text-white w-5 h-5"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg tracking-tight leading-none">HTMLove<span class="text-pink-500">.</span></h1>
+                    <p class="text-[10px] text-slate-400 font-code tracking-wider">DIGITAL GIFT SOLUTIONS</p>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition">Pengenalan</a>
+                <a href="#pricing" class="hover:text-white transition">Pakej & Harga</a>
+                <a href="#background" class="hover:text-white transition">Latar Belakang</a>
+            </div>
+            <a href="#contact" class="bg-white text-slate-900 px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-slate-200 transition">
+                Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Pengenalan Profesional -->
+    <header id="about" class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-20 right-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-pink-600/10 rounded-full blur-[120px] -z-10"></div>
+
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="inline-block px-3 py-1 rounded-full border border-pink-500/30 bg-pink-500/10 text-pink-400 text-xs font-bold mb-6 font-code">
+                        :: VERSI 2.0 KINI DIBUKA ::
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Inovasi Hadiah <br>
+                        <span class="gradient-text">Berteknologi Digital</span>
+                    </h1>
+                    <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                        Kami menyediakan perkhidmatan hadiah digital eksklusif berupa laman web peribadi yang unik dan penuh makna. Setiap baris kod disusun rapi sebagai gabungan seni teknologi dan emosi, menciptakan memori abadi yang boleh diakses bila-bila masa.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 text-sm text-slate-300">
+                            <i data-lucide="check-circle" class="text-green-500 w-4 h-4"></i> 100% Custom Code
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-slate-300">
+                            <i data-lucide="check-circle" class="text-green-500 w-4 h-4"></i> Mobile Responsive
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-slate-300">
+                            <i data-lucide="check-circle" class="text-green-500 w-4 h-4"></i> Hosting Percuma
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mockup Visual -->
+                <div class="md:w-1/2 relative">
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-700 transform rotate-2 hover:rotate-0 transition duration-500">
+                        <div class="flex items-center gap-2 mb-4 border-b border-slate-700 pb-4">
+                            <div class="flex gap-1.5">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <span class="text-xs text-slate-500 font-code ml-2">index.html — HTMLove</span>
+                        </div>
+                        <div class="space-y-3 font-code text-sm">
+                            <div class="flex">
+                                <span class="text-slate-500 w-6">1</span>
+                                <span class="text-purple-400">const</span> <span class="text-blue-400">Memory</span> = {
+                            </div>
+                            <div class="flex">
+                                <span class="text-slate-500 w-6">2</span>
+                                &nbsp;&nbsp;type: <span class="text-green-400">"Forever"</span>,
+                            </div>
+                            <div class="flex">
+                                <span class="text-slate-500 w-6">3</span>
+                                &nbsp;&nbsp;message: <span class="text-green-400">"Happy Birthday!"</span>,
+                            </div>
+                            <div class="flex">
+                                <span class="text-slate-500 w-6">4</span>
+                                &nbsp;&nbsp;music: <span class="text-blue-400">true</span>
+                            </div>
+                            <div class="flex">
+                                <span class="text-slate-500 w-6">5</span>
+                                };
+                            </div>
+                            <div class="mt-4 p-3 bg-slate-800/50 rounded text-center text-pink-400 text-xs animate-pulse">
+                                Output: ❤️ Website Berjaya Dijana!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Section: Maklumat Produk & Harga -->
+    <section id="pricing" class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Pilihan Pakej Servis</h2>
+                <p class="text-slate-400">Harga yang telus tanpa caj tersembunyi. Sesuai untuk bajet pelajar dan mahasiswa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Basic Tier -->
+                <div class="glass-panel p-8 rounded-2xl hover-card border-t-4 border-slate-500 flex flex-col">
+                    <div class="mb-4">
+                        <span class="bg-slate-700 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Pemula</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pakej Basic</h3>
+                    <div class="text-3xl font-bold text-white mb-6">RM 5.00</div>
+                    <p class="text-sm text-slate-400 mb-6 border-b border-slate-700 pb-6">
+                        Pilihan ekonomi untuk ucapan ringkas namun bermakna.
+                    </p>
+                    <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 mt-0.5"></i> <span>Halaman Web Statik</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 mt-0.5"></i> <span>Teks Ucapan Tanpa Had</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-slate-500 mt-0.5"></i> <span>1 Latar Belakang (Gambar)</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 rounded-lg border border-slate-600 text-center font-bold hover:bg-slate-800 transition">Tempah Basic</a>
+                </div>
+
+                <!-- Sweet Tier (Highlighted) -->
+                <div class="glass-panel p-8 rounded-2xl hover-card border-t-4 border-pink-500 relative flex flex-col bg-slate-800/50">
+                    <div class="absolute top-4 right-4">
+                        <i data-lucide="star" class="text-yellow-400 fill-yellow-400 w-5 h-5"></i>
+                    </div>
+                    <div class="mb-4">
+                        <span class="bg-pink-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Paling Laris</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-pink-400">Pakej Sweet</h3>
+                    <div class="text-3xl font-bold text-white mb-6">RM 10.00</div>
+                    <p class="text-sm text-slate-400 mb-6 border-b border-slate-700 pb-6">
+                        Lengkap dengan elemen interaktif dan multimedia.
+                    </p>
+                    <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-pink-500 mt-0.5"></i> <span>Animasi 'Typing Effect'</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-pink-500 mt-0.5"></i> <span>Elemen Hati Berterbangan</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-pink-500 mt-0.5"></i> <span>Lagu Latar (BGM)</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-pink-500 mt-0.5"></i> <span>Galeri Mini (3-5 Foto)</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 rounded-lg bg-pink-600 text-white text-center font-bold hover:bg-pink-700 transition shadow-lg shadow-pink-500/20">Tempah Sweet</a>
+                </div>
+
+                <!-- Premium Tier -->
+                <div class="glass-panel p-8 rounded-2xl hover-card border-t-4 border-purple-500 flex flex-col">
+                    <div class="mb-4">
+                        <span class="bg-purple-900 text-purple-200 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Eksklusif</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-purple-400">Pakej Premium</h3>
+                    <div class="text-3xl font-bold text-white mb-6">RM 15.00</div>
+                    <p class="text-sm text-slate-400 mb-6 border-b border-slate-700 pb-6">
+                        Rekaan penuh kustomisasi dengan ciri canggih.
+                    </p>
+                    <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-purple-500 mt-0.5"></i> <span>Tema Warna Kustom</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-purple-500 mt-0.5"></i> <span>Interaktif (Kuiz/Butang)</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-purple-500 mt-0.5"></i> <span>Galeri Foto Tanpa Had</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-4 h-4 text-purple-500 mt-0.5"></i> <span>Keutamaan Siap (Priority)</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full py-3 rounded-lg border border-slate-600 text-center font-bold hover:bg-slate-800 transition">Tempah Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Section: Latar Belakang Peniaga -->
+    <section id="background" class="py-24 px-6 border-y border-slate-800">
+        <div class="container mx-auto max-w-4xl">
+            <div class="glass-panel p-10 rounded-3xl">
+                <div class="flex flex-col md:flex-row gap-10 items-center">
+                    <!-- Profile Image / Avatar -->
+                    <div class="w-40 h-40 flex-shrink-0 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full blur opacity-50"></div>
+                        <div class="relative w-full h-full rounded-full bg-slate-800 border-4 border-slate-700 flex items-center justify-center overflow-hidden">
+                            <!-- Ganti src dengan gambar profile sebenar jika ada -->
+                            <i data-lucide="user" class="w-16 h-16 text-slate-500"></i>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-green-500 w-4 h-4 rounded-full border-2 border-slate-800" title="Online"></div>
+                    </div>
+
+                    <!-- Business Info -->
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="text-2xl font-bold mb-1">Mengenai HTMLove</h2>
+                        <p class="text-sm font-code text-pink-500 mb-4">Ditubuhkan oleh Iskandar</p>
+                        
+                        <div class="space-y-4 text-slate-400 leading-relaxed">
+                            <p>
+                                HTMLove adalah inisiatif servis digital yang diasaskan oleh seorang <strong>Technology Enthusiast</strong>. Kami memfokuskan kepada <strong>pembuatan hadiah digital berasaskan HTML website</strong> sebagai medium kreatif untuk penyampaian emosi.
+                            </p>
+                            <p>
+                                <strong>Visi Kami:</strong> Membuktikan bahawa hadiah yang bermakna tidak semestinya mahal, tetapi memerlukan usaha (effort) dan kreativiti teknologi.
+                            </p>
+                        </div>
+
+                        <!-- Stats / Trust Indicators -->
+                        <div class="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-slate-700">
+                            <div>
+                                <div class="text-2xl font-bold text-white">100+</div>
+                                <div class="text-[10px] uppercase tracking-wider text-slate-500">Klien Berpuas Hati</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-white">24j</div>
+                                <div class="text-[10px] uppercase tracking-wider text-slate-500">Siap Pantas</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-white">4.9</div>
+                                <div class="text-[10px] uppercase tracking-wider text-slate-500">Rating Purata</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="container mx-auto text-center max-w-3xl">
+            <h2 class="text-3xl font-bold mb-6">Hubungi Kami</h2>
+            <p class="text-slate-400 mb-10">Sedia untuk menempah? Klik platform pilihan anda di bawah untuk memulakan perbincangan.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/60143370331" target="_blank" class="group p-4 bg-slate-800 hover:bg-[#25D366] rounded-xl transition-all duration-300 border border-slate-700 hover:border-[#25D366]">
+                    <i data-lucide="message-circle" class="w-6 h-6 mx-auto mb-2 text-slate-400 group-hover:text-white transition-colors"></i>
+                    <span class="block text-sm font-bold text-white">WhatsApp</span>
+                </a>
+
+                <!-- Discord -->
+                <button onclick="copyDiscord()" class="group p-4 bg-slate-800 hover:bg-[#5865F2] rounded-xl transition-all duration-300 border border-slate-700 hover:border-[#5865F2] relative">
+                    <i data-lucide="gamepad-2" class="w-6 h-6 mx-auto mb-2 text-slate-400 group-hover:text-white transition-colors"></i>
+                    <span class="block text-sm font-bold text-white">Discord</span>
+                    <span id="copy-tooltip" class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-xs py-1 px-2 rounded opacity-0 transition-opacity">Copied!</span>
+                </button>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/iskandxr12" target="_blank" class="group p-4 bg-slate-800 hover:bg-pink-600 rounded-xl transition-all duration-300 border border-slate-700 hover:border-pink-600">
+                    <i data-lucide="instagram" class="w-6 h-6 mx-auto mb-2 text-slate-400 group-hover:text-white transition-colors"></i>
+                    <span class="block text-sm font-bold text-white">Instagram</span>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://facebook.com/zack.shah.549" target="_blank" class="group p-4 bg-slate-800 hover:bg-[#1877F2] rounded-xl transition-all duration-300 border border-slate-700 hover:border-[#1877F2]">
+                    <i data-lucide="facebook" class="w-6 h-6 mx-auto mb-2 text-slate-400 group-hover:text-white transition-colors"></i>
+                    <span class="block text-sm font-bold text-white">Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-slate-800">
+        <div class="flex items-center justify-center gap-2 mb-2">
+            <i data-lucide="code" class="w-4 h-4 text-slate-600"></i>
+            <span class="text-slate-500 text-sm font-code">Made with ❤️ by Iskandar</span>
+        </div>
+        <p class="text-xs text-slate-600">&copy; 2026 HTMLove Digital Services. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Copy Discord Function
+        function copyDiscord() {
+            navigator.clipboard.writeText("hotaru2868");
+            const tooltip = document.getElementById('copy-tooltip');
+            tooltip.style.opacity = '1';
+            setTimeout(() => {
+                tooltip.style.opacity = '0';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
